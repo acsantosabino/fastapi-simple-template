@@ -3,8 +3,8 @@ app_controller define rotas e ações
 """
 from typing import List
 from fastapi import APIRouter
-from model.models import Item
-from service.app_service import AppService
+from src.model.models import Item
+from src.service.app_service import AppService
 
 my_service = AppService()
 router = APIRouter(prefix="")

@@ -3,7 +3,7 @@ main.py lança a aplicação inicando o servidor
 """
 import uvicorn
 from fastapi import FastAPI
-from controller import app_controller as AppController
+from src.controller import app_controller as AppController
 
 
 def create_app():

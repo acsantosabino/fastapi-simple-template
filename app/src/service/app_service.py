@@ -3,7 +3,7 @@ app_service define classe de acesso a um serviço
 """
 import logging
 from typing import List
-from model.models import Item
+from src.model.models import Item
 
 class AppService():
     """ Classe de acesso a um serviço """
