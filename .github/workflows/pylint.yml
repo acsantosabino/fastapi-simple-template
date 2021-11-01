@@ -16,10 +16,10 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
+        cd app
         python -m pip install --upgrade pip
         pip install -r requirement.txt
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        cd app
         pylint $(find . -name "*.py" | xargs) --extension-pkg-whitelist='pydantic'
